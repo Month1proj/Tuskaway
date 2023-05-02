@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(219, 219, 219);
+    background-color: #F2F2F2;
 }
 .container{
     height: 100vh;
@@ -12,16 +12,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
-    gap: 20px;
-    height: -50vh;
+    margin-top: 10px;
+
 }
-.login-details,form,h1,label,input{
+.login-details,form,h1,label{
     background-color: #fff;
 }
 .login-details{
-    border: 1px solid;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 20px 40px;
     height: 410px;
 }
 form{
@@ -67,4 +66,9 @@ input{
     text-transform: capitalize;
     border: none;
     border-radius: 10px;
+}
+
+.footer img{
+    width: 100vw;
+    height: 100px;
 }
