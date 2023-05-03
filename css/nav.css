@@ -1,21 +1,23 @@
 .nav{
-    display: flex;
-    align-items: center;
+    width:95%;
+    height: 5rem;
+    padding:1rem;
+    display:flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #fff;
-}
-img{
-    background-color: #fff;
-    width: 200px;
+    align-items: center;
 }
 button{
-    padding:  10px 14px;
-    width: 100px;
-    height: 40px;
-    background-color: #FF7629;
+    padding:.5rem;
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid #FF7629;
+    border-radius: .5rem;
     color: #F3F3F3;
+    background-color: #FF7629;
     text-transform: capitalize;
-    border: none;
-    border-radius: 10px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #fff;
+    color: #FF7629;
 }
