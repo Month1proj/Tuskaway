@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
 
 }
 .login-details,form,h1,label{
@@ -48,27 +48,23 @@ input{
     height: 25px;
     padding: 10px;
 }
-.input-btn{
+.input-btn:hover{
     padding: 10px;
     height: 40px;
-    color: #FF7629;
+    color: #F2F2F2;
+    background-color: #FF7629;
     font-weight: 700;
     text-transform: capitalize;
     border: 1px solid #FF7629;
     border-radius: 10px;
 }
-.input-btn:hover{
+.input-btn{
     padding: 10px;
     height: 40px;
-    background-color: #FF7629;
-    color: #F3F3F3;
+    color: #FF7629;
+    background-color: rgb(219, 219, 219);
     font-weight: 700;
     text-transform: capitalize;
     border: none;
     border-radius: 10px;
-}
-
-.footer img{
-    width: 100vw;
-    height: 100px;
 }

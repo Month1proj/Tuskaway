@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F2F2;
+}
+.container{
+    height: 100vh;
+}
+/* Register section start */
+.register-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height:500px;
+
+}
+/* Register section end */
+
+/* register form start */
+.register-details,form,h1,label{
+    background-color: #fff;
+}
+.register-details{
+    border-radius: 10px;
+    padding: 20px 40px;
+    height: 410px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1, input{
+    margin-bottom: 20px;
+}
+h1{
+    text-transform: uppercase;
+    color: #000080;
+}
+label{
+    text-transform: capitalize;
+    color: #000080;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+input{
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    padding: 10px;
+}
+.input-btn:hover{
+    padding: 10px;
+    height: 40px;
+    color: #F2F2F2;
+    background-color: #FF7629;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 1px solid #FF7629;
+    border-radius: 10px;
+}
+.input-btn{
+    padding: 10px;
+    height: 40px;
+    color: #FF7629;
+    background-color: rgb(219, 219, 219);
+    font-weight: 700;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 10px;
+}
+/* register form end */
+.footer{
+    position: relative;
+}
+.custom-shape-divider-bottom-1683112719 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1683112719 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1683112719 .shape-fill {
+    fill: #000080;
+}
