@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    gap: 70rem;
+    margin-top: 2rem;
+    padding: 20px;
+    height: 10vh;
+}
+
+.logout{
+    background-color:  #FF7629;
+    color: white;
+    width: 5%;
+    height: 5vh;
+    border: 1px solid  #FF7629;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+
+
+.section2{
+    display: flex;
+}
+
+.navigation{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 70vh;
+    margin-top: 1rem;
+}
+
+.dashboardbutton{
+    background-color: #FF7629;
+    color: #000080;
+    padding: 30px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #FF7629;
+}
+
+.projectsbutton{
+    background-color: white;
+    color: #000080;
+    padding: 30px;
+    width: 80%;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.usersbutton{
+    background-color: white;
+    color: #000080;
+    padding: 30px;
+    width: 80%;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.welcomeadmin{
+    width: 75%;
+    border: 1px solid rgb(163, 159, 159);
+    margin-top: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 2rem;
+   margin-bottom: 1rem;
+   background-color: white;
+}
+
+.kevin{
+    color:  #FF7629;
+}
+
+.welcome{
+    color: #000080;;
+}
+
+.addnewprojectbutton{
+    background-color: #FF7629;
+    color: white;
+    padding: 10px;
+    border: 1px solid #FF7629;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
