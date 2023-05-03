@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
-button{
+.nav a button{
     padding:.5rem;
     width: 6rem;
     height: 3rem;
@@ -17,7 +17,7 @@ button{
     text-transform: capitalize;
     font-weight: 700;
 }
-button:hover{
+.nav a button:hover{
     background-color: #fff;
     color: #FF7629;
 }
