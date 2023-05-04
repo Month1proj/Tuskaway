@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    background-color: #F2F2F2;
+}
+.nav a button{
+    display: none;
+}
+.container{
+    width:95%;
+    height:100%;
+    margin: 0 auto;
+}
+.landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.landing-details{
+    width: 35rem;
+}
+h1{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #000080;
+}
+span{
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #FF7629;
+}
+.log-sign{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.login-btn button{
+    padding:.5rem;
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid #000080;
+    border-radius: .5rem;
+    color: #F3F3F3;
+    background-color: #000080;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.login-btn button:hover{
+    color: #000080;
+    background-color: #F3F3F3;
+}
+.signup-btn button{
+    padding:.5rem;
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid #FF7629;
+    border-radius: .5rem;
+    color: #F3F3F3;
+    background-color: #FF7629;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.signup-btn button:hover{
+    color: #FF7629;
+    background-color: #F3F3F3;
+}
