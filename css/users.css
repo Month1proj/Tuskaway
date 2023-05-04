@@ -63,6 +63,16 @@
 }
 
 .projectsbutton{
+    background-color: white;
+    color: #000080;
+    padding: 30px;
+    width: 80%;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.usersbutton{
     background-color: #FF7629;
     color: #000080;
     padding: 30px;
@@ -72,14 +82,14 @@
     border-radius: 5px;
 }
 
-.usersbutton{
-    background-color: white;
-    color: #000080;
-    padding: 30px;
-    width: 80%;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
+#addnewuserbutton{
+    background-color: #FF7629;
+    color: white;
+    padding: 10px;
+    border: 1px solid #FF7629;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 50rem;
 }
 
 .user1{
@@ -170,3 +180,54 @@
 .user6 p{
     color: #FF7629;
 }
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    /* left: 0;
+    top: 0; */
+    width: 70%;
+    height: 70%;
+    /* margin-left: 70rem; */
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 20rem;
+  }
+  
+  #modalcontent {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 25px;
+  }
+
+  #modalcontent label{
+    color: #000080
+  }
+
+  #modalcontent input{
+    background-color: rgb(214, 212, 212);
+    color: white;
+  }
+  
+  #close-btn {
+    margin-top: 10px;
+    background-color: #FF7629;
+    color: white;
+    border: 1px solid #FF7629;
+  }
+
+  #submit{
+    background-color: #FF7629;
+    color: white;
+    border: 1px solid #FF7629;
+  }
+
+  #modalcontent h1{
+    color: #000080;
+  }
