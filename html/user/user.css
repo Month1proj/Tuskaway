@@ -28,9 +28,7 @@ header{
     margin-bottom: 1rem;
     background:white;
     padding: 0.9rem;
-    box-shadow: 1px 2px 10px 3px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 2px 10px 3px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 2px 10px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 header .btn{
     background: var(--primary);
@@ -61,6 +59,7 @@ header .btn{
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
     
 }
 
@@ -71,6 +70,7 @@ header .btn{
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
+    
 }
 .container .right .item{
     width: 94%;
@@ -107,7 +107,9 @@ header .btn{
     align-items: center;
     flex-direction:column;
     gap: 1.3rem;
-    height:90%
+    height:90%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
+
 }
 
 .container .left h2{
@@ -148,15 +150,15 @@ header .btn{
     
     background:#f3f3f3;
     width:18rem;
-    height: 15rem;
+    height: 18rem;
     border-radius: .5rem;
     text-align:center;
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap: .4rem;
+    gap: .5rem;
     padding:.5rem;
-    box-shadow: 5px 10px rgba(0,0,0,0,.7);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 .container .left .task_container .task .task_head{
     margin-top: 1rem;
@@ -206,4 +208,37 @@ header .btn{
     border-radius: .5rem;
     cursor: pointer;
 }
+a{
+    text-decoration:none;
+}
+/* user info */
 
+.left .info{
+    width: 20rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#E2E3E4;
+    padding: .5rem;
+    height: 15rem;
+    gap:.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
+   
+}
+.left .info h3{
+    color: var(--secondary)
+}
+.left .info p{
+    color: var(--primary);
+    font-weight: var(--medium);
+    font-size: 1.1rem;
+}
+.left .info .info_head {
+    display:flex; 
+    align-items:center;
+}
+.left .info .info_head .info_image{
+    width: 5rem;
+    border-radius: 50%;
+}

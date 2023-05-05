@@ -1,11 +1,17 @@
-<<<<<<< HEAD
-=======
-.footer{
-    width:95%;
-    height:100%;
+
+footer{
+    background-image: url('../images/wave (2).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:10rem;
+    margin-top: 1rem;
+    color:white;
     overflow: hidden;
+    font-size: 1.2rem;
 }
-.footer img{
-        margin-bottom: -2.3rem;
+footer p{
+    margin-top: 1rem;
 }
->>>>>>> da99da0a67dcc48897c14c97746893ff74e2f493
