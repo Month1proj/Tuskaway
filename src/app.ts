@@ -7,9 +7,9 @@ interface person {
     id?:number
 }
 
-class Person{
+class RegisterUser{
      static async registerPerson() {
-        const newPerson = Person.getReadData();
+        const newPerson = RegisterUser.getReadData();
         console.log(newPerson);
       
         // Check if email already exists
@@ -27,7 +27,7 @@ class Person{
           alert("Please fill in all fields");
           return;
         }
-        if (!Person.isValidEmail(newPerson.email)) {
+        if (!RegisterUser.isValidEmail(newPerson.email)) {
           alert("Please enter a valid email address");
           return;
         }
@@ -60,14 +60,16 @@ class Person{
         return{ name:name.value, email:email.value,password:password.value,isAdmin:false}
         
     }
+
+   
+      
 }
-
-
-    
 const button = document.querySelector("#btn")as HTMLButtonElement 
 button.addEventListener('click',async(e)=>
     {       console.log('click')
             e.preventDefault()
-            await Person.registerPerson()
+            await RegisterUser.registerPerson()
 
-    })
+    });
+
+    
