@@ -1,0 +1,46 @@
+{
+  "persons": [
+    {
+      "name": "kevin otieno",
+      "email": "kelvinotix@gmail.com",
+      "password": "string",
+      "isAdmin": "true",
+      "id": 1
+    },
+    {
+      "name": "string",
+      "email": "string",
+      "password": "string",
+      "isAdmin": "false",
+      "id": 2
+    },
+    {
+      "name": "kevo",
+      "email": "k@mail",
+      "password": "1122",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "name": "brian",
+      "email": "brian@m.com",
+      "password": "11222",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "name": "winnie",
+      "email": "win@g.com",
+      "password": "1122",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "name": "kevin",
+      "email": "kelvinotix1@gmail.com",
+      "password": "1122",
+      "isAdmin": false,
+      "id": 6
+    }
+  ]
+}
