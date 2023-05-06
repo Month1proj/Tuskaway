@@ -242,3 +242,23 @@ a{
     width: 5rem;
     border-radius: 50%;
 }
+
+.status {
+    padding: 1rem;
+    height: 2rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+  
+  .status.online {
+    border: 8px solid #41a700;
+    color: #41a700;
+  }
+  
+  .status.offline {
+    border: 8px solid #f15c4f;
+    color: #f15c4f;
+  }
