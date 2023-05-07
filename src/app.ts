@@ -71,5 +71,3 @@ button.addEventListener('click',async(e)=>
             await RegisterUser.registerPerson()
 
     });
-
-    

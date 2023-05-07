@@ -8,28 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="../../css/projects.css">
 </head>
 <body>
-    <div class="dashboard">
+    <div class="container">
         <div class="header">
             <img src="/images/logo.svg"> 
             <button class="logout">Logout</button>
         </div>
 
         <div class="section2">
-            <div class="navigation">
-                <a href="./admin.html"><button class="dashboardbutton">Dashboard</button></a>
-                <a href="./projects.html"><button class="projectsbutton">Tasks</button></a>
-                <a href="./users.html"><button class="usersbutton">Users</button></a>
-            </div>
-            <div class="welcomeadmin">
-                <h1 class="welcome">Welcome Admin <span class="kevin">Kevin Otieno</span>!!</h1> 
-                    <button class="addnewprojectbutton">Add a new project</button>
+            <!-- dashboard navigation start -->
+        <div class="navigation">
+            <a href="./admin.html">
+                <div class="item">
+                    Dashboard
+                    <span><ion-icon name="home"></ion-icon></span>
+                   </div>
+            </a>
+
+            <a href="./projects.html">
+                <div class="item">
+                    Projects
+                    <span><ion-icon name="wallet"></ion-icon></span>
+                   </div>
+            </a>
+
+            <a href="./users.html">
+                <div class="item">
+                    Users
+                    <span><ion-icon name="people"></ion-icon></span>
+                   </div>
+            </a>
         </div>
+        <!-- dashboard navigation end -->
+            <div class="welcomeadmin">
+                <h1 class="welcome">Welcome Admin <span style="color: #FF7629;">Kevin Otieno</span>!!</h1> 
+                <a href="../admin/projects.html"><button class="logout">Add New Project?</button></a>
+            </div>
         </div>
     </div>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
 </body>
 </html>

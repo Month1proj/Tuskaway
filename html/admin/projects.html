@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="../../css/projects.css">
 </head>
 <body>
-    <div class="adminprojects">
+    <div class="container">
+        <!-- header start -->
         <div class="header">
             <img src="/images/logo.svg"> 
             <button class="logout">Logout</button>
         </div>
+        <!-- Header End -->
 
-        <button id="addnewtaskbutton">Add a new task</button>
+        <!-- Body start -->
+
+        <!-- add new project button -->
+        <div class="add-task">
+            <button id="addnewtaskbutton">Add new task</button>
+        </div>
         
-
+        <!-- add new task popup form start -->
         <div id="modal">
-
             <div id="modalcontent">
                 <h1>New Project</h1>
                 <label for="projectname">Enter Project Name</label>
@@ -33,104 +39,120 @@
                 <button id="submit">Submit</button>
 
                 <button id="close-btn">Close</button>
-
             </div>
+        </div>
+        <!-- add new task popup form end -->
 
-    </div>
-
+        <!-- main body start -->
         <div class="section2">
-
+            <!-- dashboard navigation start -->
             <div class="navigation">
-                <a href="./admin.html"><button class="dashboardbutton">Dashboard</button></a>
+                <a href="./admin.html">
+                    <div class="item">
+                        Dashboard
+                        <span><ion-icon name="home"></ion-icon></span>
+                       </div>
+                </a>
 
-                <a href="./projects.html"><button id="projectsbutton">Tasks</button></a>
+                <a href="./projects.html">
+                    <div class="item">
+                        Projects
+                        <span><ion-icon name="wallet"></ion-icon></span>
+                       </div>
+                </a>
 
-                <a href="./users.html"><button class="usersbutton">Users</button></a>
+                <a href="./users.html">
+                    <div class="item">
+                        Users
+                        <span><ion-icon name="people"></ion-icon></span>
+                       </div>
+                </a>
             </div>
+            <!-- dashboard navigation end -->
 
-            
+            <!-- Projects display section start -->
+            <div class="tasks">
+                <!-- individual task cards start -->
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
 
-        
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
 
-        <div class="tasks">
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
 
-            <div class="task1">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
+
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
+
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
+
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
+
+                <div class="task">
+                    <h1>Task Name</h1>
+                    <p>Cyber Shujaa</p>
+                    <h2>End Date</h2>
+                    <p>2021-04-22</p>
+                    <h3>Assigned to</h3>
+                    <p>Kevin Otieno</p>
+                </div>
+                <!-- individual task cards end -->
+
             </div>
-
-            <div class="task2">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task3">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task4">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task5">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task6">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task7">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
-            <div class="task8">
-                <h1>Task Name</h1>
-                <p>Cyber Shujaa</p>
-                <h2>End Date</h2>
-                <p>2021-04-22</p>
-                <h3>Assigned to</h3>
-                <p>Kevin Otieno</p>
-            </div>
-
+            <!-- Projects display section end -->
         </div>
-        
-
-        </div>
+        <!-- main body end -->
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../../js/projects.js"></script>
 </body>
 </html>

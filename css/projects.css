@@ -1,216 +1,202 @@
+:root{
+    --primary: #FF7629;
+    --secondary:#000080;
+    --body:#f3f3f3;
+    --light:400;
+    --medium:600;
+    --bold:800;
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+body{
+    background-color: var(--body);
+}
 .header{
-    display: flex;
-    gap: 70rem;
-    margin-top: 2rem;
-    padding: 20px;
-    height: 10vh;
+    width: 100%;
+    height: 5.8rem;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background:white;
+    padding: 0.9rem;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 
 .logout{
-    background-color:  #FF7629;
-    color: white;
-    width: 5%;
-    height: 5vh;
-    border: 1px solid  #FF7629;
-    border-radius: 5px;
-    margin-top: 1rem;
+    background: var(--primary);
+    color:white;
+    font-weight: var(--medium);
+    font-size:1rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    height: 3rem;
+    border-radius: .5rem;
+    outline:none;
+    border:none;
 }
-
-.addnewtaskbutton{
+.add-task{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50rem;
-    margin-top: 20rem;
+}
+#addnewtaskbutton{
+    background: var(--primary);
+    color:white;
+    font-weight: var(--medium);
+    font-size:1rem;
+    width:8rem;
+    height: 3rem;
+    border-radius: .5rem;
+    outline:none;
+    border:none;
 }
 
 .section2{
-    display: flex;
-}
-
-.tasks{
-    width: 75%;
-    border: 1px solid rgb(163, 159, 159);
-    margin-top: 1rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-left: 2rem;
-   margin-bottom: 1rem;
-   background-color: white;
+    width:98%;
+    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(4,18rem);
+    grid-template-columns: 20rem 1fr;
+    letter-spacing: .1rem;
+    margin: 1rem 0 .5rem .5rem;
 }
-
-
-#addnewtaskbutton{
-    background-color: #FF7629;
-    color: white;
-    padding: 10px;
-    border: 1px solid #FF7629;
-    border-radius: 10px;
-    margin-top: 2rem;
-    margin-left: 50rem;
-}
-
 .navigation{
-    background-color: blue;
+    background: var(--secondary);
+    height:100%;
+    width:100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 65vh;
-    margin-top: 1rem;
+    flex-direction:column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
+    border-radius: .5rem;
+}
+.item{
+    width: 94%;
+    margin: 0 auto;
+    padding:.5rem;
+    height: 7rem;
+    background: var(--body);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-weight:var(--medium);
+    font-size: 1.4rem;
+    color: var(--secondary);
+    border-radius: .5rem;
+    cursor:pointer;
+}
+.item:hover,.item span ion-icon:hover{
+    background-color: var(--primary);
+    color: white;
+}
+.item span ion-icon{
+    font-size: 1.8rem;
+}
+.tasks{
+    background:white;
+    margin-left:1rem;
+    border-radius: .5rem;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap:1rem; */
+    height:100%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 
-
-.dashboardbutton{
-    background-color: white;
-    border: 1px solid white;
-    color: #000080;
-    padding: 30px;
-    width: 80%;
-    margin: 10px;
-    border-radius: 5px;
+.task{
+    background:#f3f3f3;
+    width:13rem;
+    height: 13rem;
+    border-radius: .5rem;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: .5rem;
+    margin: 1rem;
+    padding:.5rem;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 
-#projectsbutton{
-    background-color: #FF7629;
-    color: #000080;
-    padding: 30px;
-    width: 80%;
-    margin: 10px;
-    border: 1px solid #FF7629;
-    border-radius: 5px;
+h1,h2,h3{
+    color: var(--secondary);
 }
 
-.usersbutton{
-    background-color: white;
-    color: #000080;
-    padding: 30px;
-    width: 80%;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.task1{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task2{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task3{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task4{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task5{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task6{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task7{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task8{
-    background-color: grey;
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.task1, h1,h2,h3{
-    color: #000080;
-}
-
-.task1,.task2,.task3,.task4,.task5,.task6,.task7,.task8 p{
-    color: #FF7629;
+.task p{
+    color: var(--primary);
 }
 
 #modal {
     display: none;
     position: fixed;
     z-index: 1;
-    /* left: 0;
-    top: 0; */
-    width: 70%;
+    width: 40%;
     height: 70%;
-    /* margin-left: 70rem; */
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-left: 20rem;
+    margin-top: 1rem;
+    margin-left: 25rem;
+    background-color: rgba(0,0,128,.9);
+    border-radius: .5rem;
+
   }
   
   #modalcontent {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f3f3f3;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: 25px;
+    gap: 1rem;
+    border-radius: .5rem;
+    width: 20rem;
   }
 
   #modalcontent label{
-    color: #000080
+    color: var(--secondary);
+    font-weight: var(--bold);
+    letter-spacing: .1rem;
   }
 
   #modalcontent input{
-    background-color: rgb(214, 212, 212);
-    color: white;
+    height: 2rem;
+    border: 1px solid var(--primary);
+    border-radius: .3rem;
+    padding: .5rem;
   }
   
   #close-btn {
+    height: 2rem;
     margin-top: 10px;
-    background-color: #FF7629;
+    background-color: var(--primary);
     color: white;
-    border: 1px solid #FF7629;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
   }
 
   #submit{
-    background-color: #FF7629;
+    height: 2rem;
+    background-color: var(--primary);
     color: white;
-    border: 1px solid #FF7629;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
   }
-
-
- 
+  .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .delete a{
+    color: red;
+    font-size: 1.2rem;
+  }
+  .welcomeadmin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
