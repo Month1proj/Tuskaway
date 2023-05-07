@@ -5,123 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Users</title>
-    <link rel="stylesheet" href="/css/users.css">
+    <link rel="stylesheet" href="../../css/projects.css">
 </head>
 <body>
-    <div class="adminusers">
+    <div class="container">
         <div class="header">
             <img src="/images/logo.svg"> 
             <button class="logout">Logout</button>
         </div>
 
 
-        <button id="addnewuserbutton">Add a new user</button>
-
-
-        <div id="modal">
-
-            <div id="modalcontent">
-                <h1>Assign new user</h1>
-                <label for="username">Enter Name</label>
-                <input type="text" id="username" name="username" placeholder="Enter user name">
-
-                <button id="submit">Submit</button>
-
-                <button id="close-btn">Close</button>
-
-            </div>
-
-    </div>
-
-
-        <div class="section2">
-
-      
+        <div class="section2">      
+        <!-- dashboard navigation start -->
         <div class="navigation">
-            
-                <a href="./admin.html"><button class="dashboardbutton">Dashboard</button></a>
-                <a href="./projects.html"><button class="projectsbutton" >Tasks</button></a>
-                <a href="./users.html"><button class="usersbutton">Users</button></a>
+            <a href="./admin.html">
+                <div class="item">
+                    Dashboard
+                    <span><ion-icon name="home"></ion-icon></span>
+                   </div>
+            </a>
 
+            <a href="./projects.html">
+                <div class="item">
+                    Projects
+                    <span><ion-icon name="wallet"></ion-icon></span>
+                   </div>
+            </a>
+
+            <a href="./users.html">
+                <div class="item">
+                    Users
+                    <span><ion-icon name="people"></ion-icon></span>
+                   </div>
+            </a>
         </div>
+        <!-- dashboard navigation end -->
         
-        <div class="users">
-            <div class="user1">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
+        <div class="tasks">
+            <div class="task">
+                <div class="profile">
+                    <img src="" alt="e">
+                    <h2>Martha Kihanda</h2>
+                </div>
                 <h2>Task Name</h2>
                 <p>Cyber Shujaa</p>
                 <h3>Task Progress</h3>
                 <p>Completed</p>
-                <img src="">
-                <img src="">
+                <div class="delete">
+                <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
+                </div>
             </div>
-
-            <div class="user2">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
+            <div class="task">
+                <div class="profile">
+                    <img src="" alt="e">
+                    <h2>Martha Kihanda</h2>
+                </div>
                 <h2>Task Name</h2>
                 <p>Cyber Shujaa</p>
                 <h3>Task Progress</h3>
                 <p>Completed</p>
-                <img src="">
-                <img src="">
+                <div class="delete">
+                <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
+                </div>
             </div>
-
-            <div class="user3">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
-                <h2>Task Name</h2>
-                <p>Cyber Shujaa</p>
-                <h3>Task Progress</h3>
-                <p>Completed</p>
-                <img src="">
-                <img src="">
-            </div>
-
-            <div class="user4">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
-                <h2>Task Name</h2>
-                <p>Cyber Shujaa</p>
-                <h3>Task Progress</h3>
-                <p>Completed</p>
-                <img src="">
-                <img src="">
-            </div>
-
-            <div class="user5">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
-                <h2>Task Name</h2>
-                <p>Cyber Shujaa</p>
-                <h3>Task Progress</h3>
-                <p>Completed</p>
-                <img src="">
-                <img src="">
-            </div>
-
-            <div class="user6">
-                <img src="">
-                <h1>Martha Kihanda</h1>
-                <p>online</p>
-                <h2>Task Name</h2>
-                <p>Cyber Shujaa</p>
-                <h3>Task Progress</h3>
-                <p>Completed</p>
-                <img src="">
-                <img src="">
-            </div>
-
-
+            
         </div>
         </div>
     </div>
     <script src="/js/users.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

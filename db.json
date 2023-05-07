@@ -41,6 +41,13 @@
       "password": "1122",
       "isAdmin": false,
       "id": 6
+    },
+    {
+      "name": "Elias",
+      "email": "elias@gmail.com",
+      "password": "bro",
+      "isAdmin": false,
+      "id": 7
     }
   ]
 }
