@@ -15,19 +15,20 @@
     font-family: 'Poppins', sans-serif;
     background-color: #F3F3F3;
 }
-.container{
+/* .container{
     width:95%;
     height:100%;
     margin: 0 auto;
-}
+    background-color: red;
+} */
 /* Register section start */
-.register-page{
+/* .register-page{
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-}
+} */
 /* Register section end */
 
 /* register form start */
@@ -49,31 +50,35 @@ form{
     justify-content: center;
 } */
 .left{
-    height:44rem;
+    height:49rem;
     padding:.5rem;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    /* background-color: green; */
 }
 .container .right{
-    /* background:blue; */
-    height:68%;
+    background:white;
+    height:95%;
+    /* width: 100%; */
     display: flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:white;
+    /* background:green; */
     border-radius: .5rem;
-    padding:.5rem;
+    padding:2rem;
 }
 .container .right h1{
     font-size: 1.8rem;
     color: var(--secondary);
     padding:.5rem;
+    background-color: white;
+    text-transform: capitalize;
 }
 .container .left img{
-   width:94%;
+   width:98%;
 }
 /* }
 label{
@@ -120,6 +125,7 @@ input{
     padding:.5rem;
 
 }
+
 /* form section start */
 form{
     width:34rem;
@@ -130,8 +136,7 @@ form{
     flex-direction: column;
     justify-content: center;
     /* align-items:center; */
-    height:24rem;
-   
+    height:34rem;
     margin-top:2rem;
     gap:.8rem;
 }
@@ -173,4 +178,8 @@ form button{
 form button:hover{
    /* opacity: .7; */
    background-color:#000080;
+}
+form label{
+    background-color: white;
+    text-transform:capitalize;
 }
