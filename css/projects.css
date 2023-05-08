@@ -42,6 +42,13 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.re-assigntask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #addnewtaskbutton{
     background: var(--primary);
     color:white;
@@ -52,6 +59,18 @@ body{
     border-radius: .5rem;
     outline:none;
     border:none;
+}
+
+#reassigntaskbutton{
+  background: var(--primary);
+  color:white;
+  font-weight: var(--medium);
+  font-size:1rem;
+  width:8rem;
+  height: 3rem;
+  border-radius: .5rem;
+  outline:none;
+  border:none;
 }
 
 .section2{
@@ -94,7 +113,7 @@ body{
 .item span ion-icon{
     font-size: 1.8rem;
 }
-.tasks{
+#tasks{
     background:white;
     margin-left:1rem;
     border-radius: .5rem;
@@ -105,7 +124,7 @@ body{
     box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.4);
 }
 
-.task{
+#task{
     background:#f3f3f3;
     width:13rem;
     height: 13rem;

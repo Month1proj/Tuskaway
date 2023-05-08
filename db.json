@@ -49,5 +49,43 @@
       "isAdmin": false,
       "id": 7
     }
+  ],
+  "tasks": [
+    {
+      "taskName": "New Task",
+      "endDate": "04/01/2023",
+      "assignedTo": "Jemmoh",
+      "id": 2
+    },
+    {
+      "taskName": "Watch",
+      "endDate": "06/08/2025",
+      "assignedTo": "John",
+      "id": 4
+    },
+    {
+      "taskName": "Run",
+      "endDate": "08/02/2026",
+      "assignedTo": "Dickson",
+      "id": 5
+    },
+    {
+      "taskName": "Wash",
+      "endDate": "03/02/2028",
+      "assignedTo": "Hiram",
+      "id": 6
+    },
+    {
+      "taskName": "Eat",
+      "endDate": "06/02/2023",
+      "assignedTo": "Sam",
+      "id": 7
+    },
+    {
+      "taskName": "New Task",
+      "endDate": "04/01/2023",
+      "assignedTo": "Jemmoh",
+      "id": 8
+    }
   ]
 }

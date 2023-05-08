@@ -1,9 +1,9 @@
-const modalBtn = document.getElementById('addnewuserbutton');
-const modal = document.getElementById('modal');
-const closeBtn = document.getElementById('close-btn');
+const reassignmodalBtn = document.getElementById('assigntaskbutton');
+const reassignmodal = document.getElementById('modal');
+const reassigncloseBtn = document.getElementById('close-btn');
 
-modalBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
+reassignmodalBtn .addEventListener('click', openModal);
+reassigncloseBtn.addEventListener('click', closeModal);
 
 function openModal() {
   modal.style.display = 'block';
