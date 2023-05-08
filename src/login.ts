@@ -41,9 +41,14 @@ class LoginUser {
       if (person.isAdmin) {
         window.location.href = "../admin/admin.html";
       } else {
-        window.location.href = "../user/user.html";
+        const userPage = window.open("../user/user.html")!;
+        userPage.document.write(`
+          <h1>Welcome ${person.name}!</h1>
+          <p>Email: ${person.email}</p>
+        `);
       }
     }
+    
   }
   
     
@@ -56,3 +61,5 @@ button1.addEventListener('click',async(e)=>
             await LoginUser.loginUser()
 
     })
+
+ 

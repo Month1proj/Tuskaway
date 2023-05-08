@@ -4,15 +4,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: large;
-    background-color: white;
+    /* background-color: white; */
 }
 .nav a button{
     display: none;
 }
 .container{
     width:95%;
-    height:100%;
+    /* height:80%; */
     margin: 0 auto;
+    height:30rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .landing-page{
     display: flex;
@@ -23,6 +28,15 @@
 }
 .landing-details{
     width: 35rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+   
+}
+.landing-details p{
+    width:30rem;
 }
 h1{
     margin-bottom: 1rem;
@@ -54,8 +68,8 @@ span{
     font-weight: 700;
 }
 .login-btn button:hover{
-    color: #000080;
-    background-color: #F3F3F3;
+    color: white;
+    background-color:  #FF7629;
 }
 .signup-btn button{
     padding:.5rem;
@@ -69,6 +83,30 @@ span{
     font-weight: 700;
 }
 .signup-btn button:hover{
-    color: #FF7629;
-    background-color: #F3F3F3;
+    color: white;
+    background-color: #000080;
+}
+
+footer{
+    background-image: url('../images/wave (2).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:8rem;
+    margin-top: 1rem;
+    color:white;
+    overflow: hidden;
+    font-size: 1.2rem;
+    bottom: 0;
+    
+}
+footer p{
+    /* margin-top: -1rem; */
+    background-color: transparent;
+    position: relative;
+    bottom:0rem;
 }
