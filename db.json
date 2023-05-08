@@ -106,6 +106,12 @@
       "endDate": "06/02/2023",
       "assignedTo": "Sam",
       "id": 7
+    },
+    {
+      "taskName": "New Task",
+      "endDate": "04/01/2023",
+      "assignedTo": "Joshua",
+      "id": 8
     }
   ]
 }
