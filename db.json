@@ -12,6 +12,7 @@
       "email": "string",
       "password": "string",
       "isAdmin": "false",
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "id": 2
     },
     {
@@ -19,6 +20,7 @@
       "email": "k@mail",
       "password": "1122",
       "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "id": 3
     },
     {
@@ -26,6 +28,7 @@
       "email": "brian@m.com",
       "password": "11222",
       "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "id": 4
     },
     {
@@ -33,12 +36,14 @@
       "email": "win@g.com",
       "password": "1122",
       "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "id": 5
     },
     {
       "name": "kevin",
       "email": "kelvinotix1@gmail.com",
       "password": "1122",
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "isAdmin": false,
       "id": 6
     },
@@ -47,27 +52,48 @@
       "email": "elias@gmail.com",
       "password": "bro",
       "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
       "id": 7
+    },
+    {
+      "name": "joshua",
+      "email": "joshua@gmail.com",
+      "password": "1234",
+      "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
+      "id": 8
+    },
+    {
+      "name": "philip",
+      "email": "mwangi@gmail.com",
+      "password": "1122",
+      "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
+      "id": 9
+    },
+    {
+      "name": "mwangi",
+      "email": "philip@gmail.com",
+      "password": "11223",
+      "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
+      "id": 10
+    },
+    {
+      "name": "brian",
+      "email": "brian@gmail.com",
+      "password": "1122",
+      "isAdmin": false,
+      "picture": "https://i.stack.imgur.com/l60Hf.png",
+      "id": 11
     }
   ],
   "tasks": [
-    {
-      "taskName": "New Task",
-      "endDate": "04/01/2023",
-      "assignedTo": "Jemmoh",
-      "id": 2
-    },
     {
       "taskName": "Watch",
       "endDate": "06/08/2025",
       "assignedTo": "John",
       "id": 4
-    },
-    {
-      "taskName": "Run",
-      "endDate": "08/02/2026",
-      "assignedTo": "Dickson",
-      "id": 5
     },
     {
       "taskName": "Wash",
@@ -80,12 +106,6 @@
       "endDate": "06/02/2023",
       "assignedTo": "Sam",
       "id": 7
-    },
-    {
-      "taskName": "New Task",
-      "endDate": "04/01/2023",
-      "assignedTo": "Jemmoh",
-      "id": 8
     }
   ]
 }

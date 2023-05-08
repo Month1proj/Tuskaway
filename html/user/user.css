@@ -262,3 +262,7 @@ a{
     border: 8px solid #f15c4f;
     color: #f15c4f;
   }
+
+  @media screen and (max-width:800px) {
+    
+  }
