@@ -82,15 +82,18 @@ class Task {
     }
   }
 
-  static async reassignTask(id:number, newAssignedTo: string) {
+  static async reassignTask(id:number) {
+    // let new
+    const reassignedToInput = document.getElementById('reassignedTo') as HTMLInputElement;
+    const reassignedTo = reassignedToInput.value;
     try {
       const response = await fetch(`http://localhost:3000/tasks/${id}`, {
-        method: 'PATCH',
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          assignedTo: newAssignedTo,
+          assignedTo:reassignedTo
         }),
       });
   
@@ -112,18 +115,18 @@ function handleFormSubmit(event: Event) {
   // const taskNameInput = document.getElementById('taskName') as HTMLInputElement;
   // const endDateInput = document.getElementById('endDate') as HTMLInputElement;
   // const assignedToInput = document.getElementById('assignedTo') as HTMLInputElement;
-  const reassignedToInput = document.getElementById('reassignedTo') as HTMLInputElement;
+ 
 
   const taskId = Number(taskIdInput.value);
   // const taskName = taskNameInput.value;
   // const endDate = endDateInput.value;
   // const assignedTo = assignedToInput.value;
-  const reassignedTo = reassignedToInput.value;
+ 
 
   // Reassign the task
-  Task.reassignTask(taskId,reassignedTo);
+  Task.reassignTask(taskId);
 }
 const submitButton = document.getElementById('submit');
-submitButton?.addEventListener('click', handleFormSubmit);
+submitButton?.addEventListener('click', Task.addTask);
 
 Task.dsiplayTasks();

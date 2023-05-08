@@ -123,23 +123,27 @@ var Task = /** @class */ (function () {
             });
         });
     };
-    Task.reassignTask = function (id, newAssignedTo) {
+    Task.reassignTask = function (id) {
         return __awaiter(this, void 0, void 0, function () {
-            var response, error_2;
+            var reassignedToInput, reassignedTo, response, error_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
+                        reassignedToInput = document.getElementById('reassignedTo');
+                        reassignedTo = reassignedToInput.value;
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
                         return [4 /*yield*/, fetch("http://localhost:3000/tasks/".concat(id), {
-                                method: 'PATCH',
+                                method: 'PUT',
                                 headers: {
                                     'Content-Type': 'application/json',
                                 },
                                 body: JSON.stringify({
-                                    assignedTo: newAssignedTo,
+                                    assignedTo: reassignedTo
                                 }),
                             })];
-                    case 1:
+                    case 2:
                         response = _a.sent();
                         if (response.ok) {
                             console.log('Task reassigned successfully!');
@@ -147,12 +151,12 @@ var Task = /** @class */ (function () {
                         else {
                             console.error('Task reassignment failed!');
                         }
-                        return [3 /*break*/, 3];
-                    case 2:
+                        return [3 /*break*/, 4];
+                    case 3:
                         error_2 = _a.sent();
                         console.error('Error:', error_2);
-                        return [3 /*break*/, 3];
-                    case 3: return [2 /*return*/];
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
@@ -165,15 +169,13 @@ function handleFormSubmit(event) {
     // const taskNameInput = document.getElementById('taskName') as HTMLInputElement;
     // const endDateInput = document.getElementById('endDate') as HTMLInputElement;
     // const assignedToInput = document.getElementById('assignedTo') as HTMLInputElement;
-    var reassignedToInput = document.getElementById('reassignedTo');
     var taskId = Number(taskIdInput.value);
     // const taskName = taskNameInput.value;
     // const endDate = endDateInput.value;
     // const assignedTo = assignedToInput.value;
-    var reassignedTo = reassignedToInput.value;
     // Reassign the task
-    Task.reassignTask(taskId, reassignedTo);
+    Task.reassignTask(taskId);
 }
 var submitButton = document.getElementById('submit');
-submitButton === null || submitButton === void 0 ? void 0 : submitButton.addEventListener('click', handleFormSubmit);
+submitButton === null || submitButton === void 0 ? void 0 : submitButton.addEventListener('click', Task.addTask);
 Task.dsiplayTasks();
