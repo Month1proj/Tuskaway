@@ -13,7 +13,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F3F3;
+    /* background-color: #F3F3F3; */
+}
+body{
+    height: 100%;
 }
 /* .container{
     width:95%;
@@ -60,6 +63,7 @@ form{
 }
 .container .right{
     background:white;
+    width:36rem;
     height:95%;
     /* width: 100%; */
     display: flex;
@@ -182,4 +186,26 @@ form button:hover{
 form label{
     background-color: white;
     text-transform:capitalize;
+}
+footer{
+    background-image: url('../images/wave (2).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:8rem;
+    margin-top: 1rem;
+    color:white;
+    overflow: hidden;
+    font-size: 1.2rem;
+    bottom: 0;
+}
+footer p{
+    /* margin-top: -1rem; */
+    background-color: transparent;
+    position: relative;
+    bottom:0rem;
 }
