@@ -123,8 +123,57 @@ var Task = /** @class */ (function () {
             });
         });
     };
+    Task.reassignTask = function (id, newAssignedTo) {
+        return __awaiter(this, void 0, void 0, function () {
+            var response, error_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, fetch("http://localhost:3000/tasks/".concat(id), {
+                                method: 'PATCH',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                    assignedTo: newAssignedTo,
+                                }),
+                            })];
+                    case 1:
+                        response = _a.sent();
+                        if (response.ok) {
+                            console.log('Task reassigned successfully!');
+                        }
+                        else {
+                            console.error('Task reassignment failed!');
+                        }
+                        return [3 /*break*/, 3];
+                    case 2:
+                        error_2 = _a.sent();
+                        console.error('Error:', error_2);
+                        return [3 /*break*/, 3];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
     return Task;
 }());
+function handleFormSubmit(event) {
+    event.preventDefault();
+    var taskIdInput = document.getElementById('taskId');
+    // const taskNameInput = document.getElementById('taskName') as HTMLInputElement;
+    // const endDateInput = document.getElementById('endDate') as HTMLInputElement;
+    // const assignedToInput = document.getElementById('assignedTo') as HTMLInputElement;
+    var reassignedToInput = document.getElementById('reassignedTo');
+    var taskId = Number(taskIdInput.value);
+    // const taskName = taskNameInput.value;
+    // const endDate = endDateInput.value;
+    // const assignedTo = assignedToInput.value;
+    var reassignedTo = reassignedToInput.value;
+    // Reassign the task
+    Task.reassignTask(taskId, reassignedTo);
+}
 var submitButton = document.getElementById('submit');
-submitButton === null || submitButton === void 0 ? void 0 : submitButton.addEventListener('click', Task.addTask);
+submitButton === null || submitButton === void 0 ? void 0 : submitButton.addEventListener('click', handleFormSubmit);
 Task.dsiplayTasks();

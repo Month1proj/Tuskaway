@@ -22,6 +22,30 @@
         <div class="add-task">
             <button id="addnewtaskbutton">Add new task</button>
         </div>
+
+        <button id="formButton" onclick="generateForm()">Re assign task</button>
+  <div id="formContainer"></div>
+
+  <script>
+    function generateForm() {
+      const formContainer = document.getElementById('formContainer');
+
+      const formHTML = `
+        <form id="taskForm">
+
+            <label for="taskId">Task ID:</label>
+            <input type="text" id="taskId" required><br>
+
+          <label for="reassignedTo">Reassigned To:</label>
+          <input type="text" id="reassignedTo" required><br>
+
+          <button type="submit">Submit</button>
+        </form>
+      `;
+
+      formContainer.innerHTML = formHTML;
+    }
+  </script>
         
         <!-- add new task popup form start -->
         <div id="modal">
@@ -41,6 +65,8 @@
                 <button id="close-btn">Close</button>
             </div>
         </div>
+
+        
         <!-- add new task popup form end -->
 
         <!-- main body start -->
