@@ -40,6 +40,7 @@ header .btn{
     border-radius: .5rem;
     outline:none;
     border:none;
+    
 }
 header .btn:hover{
     background-color:#000080;
